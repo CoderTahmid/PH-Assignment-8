@@ -1,6 +1,11 @@
+import { useParams } from "react-router-dom";
 import bannerImg from "../../assets/banner.jpg"
 
 const Banner = () => {
+
+    const { id } = useParams();
+    console.log(id);
+
     return (
         <div>
             <div className="bg-[#9538E2] z-0 py-[48px] mx-[30px] space-y-[24px]">

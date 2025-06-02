@@ -8,9 +8,9 @@ const MainLayout = () => {
     return (
         <>
             <Navbar></Navbar>
+            <Outlet></Outlet>
             <Banner></Banner>
             {/* Dynamic Section */}
-            <Outlet></Outlet>
             <Footer></Footer>
         </> 
     );
