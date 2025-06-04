@@ -1,17 +1,15 @@
-import { useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import bannerImg from "../../assets/banner.jpg"
 
-const Banner = () => {
-
-    const { id } = useParams();
-    console.log(id);
-
+const HomeBanner = () => {
     return (
         <div>
             <div className="bg-[#9538E2] z-0 py-[48px] mx-[30px] space-y-[24px]">
                 <h1 className="text-white font-bold text-[56px] text-center">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                 <p className="text-white text-center w-[70%] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-                <button className="btn btn-lg mx-auto block text-[#9538E2] rounded-4xl">Shop Now</button>
+                <NavLink to="/dashboard">
+                    <button className="btn btn-lg mx-auto block text-[#9538E2] rounded-4xl">Shop Now</button>
+                </NavLink>
             </div>
             <div
                 className="mx-[30px]"
@@ -31,4 +29,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default HomeBanner;

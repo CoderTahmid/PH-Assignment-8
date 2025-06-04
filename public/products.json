@@ -1,0 +1,172 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Dell XPS 15",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/bConBvTE28yrUpDQ8WEtte.jpg",
+    "category": "Laptops",
+    "price": 1199,
+    "description": "High-performance laptop with stunning display and speed.",
+    "specification": [
+      "15.6-inch 4K UHD+ Display",
+      "Intel Core i7-12700H",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA RTX 3050"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 2,
+    "product_title": "MacBook Air M2",
+    "product_image": "https://techcrunch.com/wp-content/uploads/2022/07/CMC_1580.jpg",
+    "category": "Laptops",
+    "price": 999,
+    "description": "Sleek and powerful MacBook Air with Apple's M2 chip.",
+    "specification": [
+      "13.6-inch Liquid Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "MagSafe Charging"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 3,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/08/HP-Spectre-x360-14-1-of-7.jpg",
+    "category": "Laptops",
+    "price": 1050,
+    "description": "Convertible laptop with stunning OLED touchscreen.",
+    "specification": [
+      "13.5-inch OLED Touchscreen",
+      "Intel Core i7-1255U",
+      "16GB RAM",
+      "1TB SSD",
+      "360° hinge"
+    ],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": 4,
+    "product_title": "Lenovo Legion 5",
+    "product_image": "https://www.pqs.com.bd/image/cache/catalog/laptop/Legion%205%2016IRX9/lenovo-legion-5i-gaming-16irx9-14th-gen-02-500x500.webp",
+    "category": "Laptops",
+    "price": 1150,
+    "description": "Gaming laptop with solid graphics and cooling performance.",
+    "specification": [
+      "15.6-inch FHD 165Hz",
+      "AMD Ryzen 7 6800H",
+      "16GB RAM",
+      "1TB SSD",
+      "NVIDIA RTX 3060"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": 5,
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://mcsolution.com.bd/wp-content/uploads/2021/10/acer-aspire-5-price-in-bangladesh.webp",
+    "category": "Laptops",
+    "price": 650,
+    "description": "Budget-friendly laptop for everyday tasks.",
+    "specification": [
+      "15.6-inch FHD",
+      "Intel Core i5-1235U",
+      "8GB RAM",
+      "512GB SSD",
+      "Wi-Fi 6"
+    ],
+    "availability": true,
+    "rating": 4.1
+  },
+  {
+    "product_id": 6,
+    "product_title": "ASUS ZenBook 14",
+    "product_image": "https://dlcdnwebimgs.asus.com/gain/be67987f-28c5-40d9-aaa6-d14c3ef73839/",
+    "category": "Laptops",
+    "price": 899,
+    "description": "Lightweight and elegant ultrabook for professionals.",
+    "specification": [
+      "14-inch 2.8K OLED display",
+      "AMD Ryzen 7 7730U",
+      "16GB RAM",
+      "512GB SSD",
+      "Backlit Keyboard"
+    ],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": 7,
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://media.wired.com/photos/63ee8e4fcde6e0e4f71293ef/master/pass/Samsung-Galaxy-S23-SOURCE-Samsung.jpg",
+    "category": "Smartphones",
+    "price": 1399,
+    "description": "Flagship Android phone with powerful camera.",
+    "specification": [
+      "6.8-inch QHD+ AMOLED",
+      "Snapdragon 8 Gen 2",
+      "200MP Camera",
+      "12GB RAM",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 8,
+    "product_title": "OnePlus Nord CE 3 Lite",
+    "product_image": "https://oasis.opstatics.com/content/dam/oasis/page/2023/larry/larry-share.jpg",
+    "category": "Smartphones",
+    "price": 299,
+    "description": "Affordable phone with smooth performance.",
+    "specification": [
+      "6.72-inch FHD+ 120Hz",
+      "Snapdragon 695",
+      "108MP Camera",
+      "8GB RAM",
+      "5000mAh battery"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": 9,
+    "product_title": "DJI Mini 3 Pro",
+    "product_image": "https://www.jaskamerakauppa.fi/59705-thickbox_default/dji-mini-3-pro.jpg",
+    "category": "Drones",
+    "price": 759,
+    "description": "Compact drone with obstacle sensing and 4K video.",
+    "specification": [
+      "4K HDR Video",
+      "Tri-directional obstacle sensing",
+      "31-min flight time",
+      "Foldable design",
+      "Intelligent Flight Modes"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 10,
+    "product_title": "Holy Stone HS720E",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:1201,cw:3204,ch:2403,q:80,w:3204/K3tFiyzpS5T2gprhjqd3qQ.jpg",
+    "category": "Drones",
+    "price": 319,
+    "description": "User-friendly GPS drone for beginners and hobbyists.",
+    "specification": [
+      "4K EIS Camera",
+      "GPS Return to Home",
+      "26-min flight time",
+      "Brushless Motors",
+      "Follow Me Mode"
+    ],
+    "availability": false,
+    "rating": 4.0
+  }
+]
