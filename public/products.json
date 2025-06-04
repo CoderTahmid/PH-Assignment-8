@@ -18,37 +18,37 @@
   },
   {
     "product_id": 2,
-    "product_title": "MacBook Air M2",
-    "product_image": "https://techcrunch.com/wp-content/uploads/2022/07/CMC_1580.jpg",
-    "category": "Laptops",
-    "price": 999,
-    "description": "Sleek and powerful MacBook Air with Apple's M2 chip.",
+    "product_title": "Holy Stone HS720E",
+    "product_image": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:1201,cw:3204,ch:2403,q:80,w:3204/K3tFiyzpS5T2gprhjqd3qQ.jpg",
+    "category": "Drones",
+    "price": 319,
+    "description": "User-friendly GPS drone for beginners and hobbyists.",
     "specification": [
-      "13.6-inch Liquid Retina display",
-      "Apple M2 chip",
-      "8GB RAM",
-      "256GB SSD",
-      "MagSafe Charging"
+      "4K EIS Camera",
+      "GPS Return to Home",
+      "26-min flight time",
+      "Brushless Motors",
+      "Follow Me Mode"
     ],
-    "availability": true,
-    "rating": 4.6
+    "availability": false,
+    "rating": 4.0
   },
   {
     "product_id": 3,
-    "product_title": "HP Spectre x360",
-    "product_image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/08/HP-Spectre-x360-14-1-of-7.jpg",
-    "category": "Laptops",
-    "price": 1050,
-    "description": "Convertible laptop with stunning OLED touchscreen.",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://media.wired.com/photos/63ee8e4fcde6e0e4f71293ef/master/pass/Samsung-Galaxy-S23-SOURCE-Samsung.jpg",
+    "category": "Smartphones",
+    "price": 1399,
+    "description": "Flagship Android phone with powerful camera.",
     "specification": [
-      "13.5-inch OLED Touchscreen",
-      "Intel Core i7-1255U",
-      "16GB RAM",
-      "1TB SSD",
-      "360° hinge"
+      "6.8-inch QHD+ AMOLED",
+      "Snapdragon 8 Gen 2",
+      "200MP Camera",
+      "12GB RAM",
+      "5000mAh battery"
     ],
-    "availability": false,
-    "rating": 4.5
+    "availability": true,
+    "rating": 4.9
   },
   {
     "product_id": 4,
@@ -103,20 +103,20 @@
   },
   {
     "product_id": 7,
-    "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://media.wired.com/photos/63ee8e4fcde6e0e4f71293ef/master/pass/Samsung-Galaxy-S23-SOURCE-Samsung.jpg",
-    "category": "Smartphones",
-    "price": 1399,
-    "description": "Flagship Android phone with powerful camera.",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/08/HP-Spectre-x360-14-1-of-7.jpg",
+    "category": "Laptops",
+    "price": 1050,
+    "description": "Convertible laptop with stunning OLED touchscreen.",
     "specification": [
-      "6.8-inch QHD+ AMOLED",
-      "Snapdragon 8 Gen 2",
-      "200MP Camera",
-      "12GB RAM",
-      "5000mAh battery"
+      "13.5-inch OLED Touchscreen",
+      "Intel Core i7-1255U",
+      "16GB RAM",
+      "1TB SSD",
+      "360° hinge"
     ],
-    "availability": true,
-    "rating": 4.9
+    "availability": false,
+    "rating": 4.5
   },
   {
     "product_id": 8,
@@ -154,19 +154,19 @@
   },
   {
     "product_id": 10,
-    "product_title": "Holy Stone HS720E",
-    "product_image": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:1201,cw:3204,ch:2403,q:80,w:3204/K3tFiyzpS5T2gprhjqd3qQ.jpg",
-    "category": "Drones",
-    "price": 319,
-    "description": "User-friendly GPS drone for beginners and hobbyists.",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://techcrunch.com/wp-content/uploads/2022/07/CMC_1580.jpg",
+    "category": "Laptops",
+    "price": 999,
+    "description": "Sleek and powerful MacBook Air with Apple's M2 chip.",
     "specification": [
-      "4K EIS Camera",
-      "GPS Return to Home",
-      "26-min flight time",
-      "Brushless Motors",
-      "Follow Me Mode"
+      "13.6-inch Liquid Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "MagSafe Charging"
     ],
-    "availability": false,
-    "rating": 4.0
+    "availability": true,
+    "rating": 4.6
   }
 ]

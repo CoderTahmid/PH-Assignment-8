@@ -28,11 +28,13 @@ const routes = createBrowserRouter([
                     },
                     {
                         path: "/phones",
-                        element: <Phones></Phones>
+                        element: <Phones></Phones>,
+                        loader: () => fetch("../products.json")
                     },
                     {
                         path: "/drones",
-                        element: <Drones></Drones>
+                        element: <Drones></Drones>,
+                        loader: () => fetch("../products.json")
                     }
                 ]
             },
