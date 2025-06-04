@@ -4,12 +4,11 @@ import GadgetsCard from "../GadgetsCard/GadgetsCard";
 const AllCategoryGadgets = () => {
 
     const AllData = useLoaderData();
-    // AllData.map(data => console.log(data.product_title));
 
     return (
         <div className="w-[70%] grid grid-cols-3 gap-6">
             {
-                AllData.map(data => <GadgetsCard data={data}></GadgetsCard>)
+                AllData.map(data => <GadgetsCard key={data.product_id} data={data}></GadgetsCard>)
             }
         </div>
     );

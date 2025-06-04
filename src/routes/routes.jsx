@@ -23,7 +23,8 @@ const routes = createBrowserRouter([
                     },
                     {
                         path: "/laptops",
-                        element: <Laptops></Laptops>
+                        element: <Laptops></Laptops>,
+                        loader: () => fetch("../products.json")
                     },
                     {
                         path: "/phones",
