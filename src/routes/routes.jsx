@@ -6,6 +6,7 @@ import AllCategoryGadgets from "../components/AllCategoryGadgets/AllCategoryGadg
 import Laptops from "../components/Laptops/Laptops";
 import Phones from "../components/Phones/Phones";
 import Drones from "../components/Drones/Drones";
+import ProductDetails from "../components/ProductDetails/ProductDetails";
 
 const routes = createBrowserRouter([
     {
@@ -41,6 +42,11 @@ const routes = createBrowserRouter([
             {
                 path: "/statistics",
                 element: <Statistics></Statistics>
+            },
+            {
+                path: "/products-details/:id",
+                element: <ProductDetails></ProductDetails>,
+                loader: () => fetch("../products.json")
             }
         ]
     }
