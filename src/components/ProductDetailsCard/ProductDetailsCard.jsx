@@ -1,14 +1,30 @@
 import { LiaStarSolid } from "react-icons/lia";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { toast } from "react-toastify";
 
-const ProductDetailsCard = ({ data }) => {
+const ProductDetailsCard = ({ data, cartItems, setCartItems }) => {
 
-    console.log(data);
-
-    const { product_image, product_title, price, availability, description, specification, rating } = data;
+    const { product_id, product_image, product_title, price, availability, description, specification, rating } = data;
 
     const stockBtnColor = availability ? "px-[14px] py-[7px] border border-[#309C08] inline-block rounded-4xl bg-[#309C081A] text-[#309C08]" : "px-[14px] py-[7px] border border-[#9c0808] inline-block rounded-4xl bg-[#df37371a] text-[#9c0808]";
+
+    const handleAddToCart = () => {
+        if (cartItems.length === 0) {
+            setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
+            toast.success("Item added!");
+        } else {
+            const hasId = cartItems.map(cartItem => cartItem.product_id == product_id);
+
+            if (hasId[cartItems.length - 1]) {
+                toast.warning("You already added this item into cart");
+                return;
+            } else {
+                setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
+                toast.success("Item added!");
+            }
+        }
+    }
 
     return (
         <div>
@@ -46,7 +62,7 @@ const ProductDetailsCard = ({ data }) => {
                                 <div className="text-black rounded-4xl bg-[#09080F0D] px-[14px] py-[7px] ml-4">{rating}</div>
                             </div>
                             <div className="flex gap-4">
-                                <button className="btn border-none bg-[#9538E2] rounded-4xl text-white font-bold text-[18px]">Add to cart<MdOutlineShoppingCart /></button>
+                                <button onClick={handleAddToCart} className="btn border-none bg-[#9538E2] rounded-4xl text-white font-bold text-[18px]">Add to cart<MdOutlineShoppingCart /></button>
                                 <button className='btn bg-white rounded-full flex justify-center items-center p-2 border border-[#0B0B0B1A] text-[22px]'><FaRegHeart /></button>
                             </div>
                         </div>

@@ -7,6 +7,9 @@ import Laptops from "../components/Laptops/Laptops";
 import Phones from "../components/Phones/Phones";
 import Drones from "../components/Drones/Drones";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Cart from "../components/Cart/Cart";
+import Wishlist from "../components/Wishlist/Wishlist";
 
 const routes = createBrowserRouter([
     {
@@ -42,6 +45,20 @@ const routes = createBrowserRouter([
             {
                 path: "/statistics",
                 element: <Statistics></Statistics>
+            },
+            {
+                path: "/dashboard",
+                element: <Dashboard></Dashboard>,
+                children: [
+                    {
+                        path: "/dashboard/cart",
+                        element: <Cart></Cart>
+                    },
+                    {
+                        path: "/dashboard/wishlist",
+                        element: <Wishlist></Wishlist>
+                    }
+                ]
             },
             {
                 path: "/products-details/:id",

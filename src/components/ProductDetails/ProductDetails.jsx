@@ -4,15 +4,11 @@ import ProductDetailsCard from '../ProductDetailsCard/ProductDetailsCard';
 
 const ProductDetails = () => {
 
-    const { navbarColorChanging } = useOutletContext();
+    const { navbarColorChanging, cartItems, setCartItems } = useOutletContext();
+    // console.log(cartItems);
     const { id } = useParams();
-    // const allData = useLoaderData();
-    // console.log(allData);
 
     const allData = useLoaderData();
-    // console.log(allData);
-
-    // allData.map( data => console.log(data.product_id));
 
     useEffect(() => {
         navbarColorChanging(true);
@@ -20,15 +16,12 @@ const ProductDetails = () => {
         return () => navbarColorChanging(false);
     }, [navbarColorChanging]);
 
-    // console.log(id);
-    // allData.map(data => data.product_id == id ? console.log("kingg") : console.log("kutt"));
-
     return (
         <div>
             {
-                allData.map(data => data.product_id == id ? <ProductDetailsCard data={data}></ProductDetailsCard> : "")
+                allData.map(data => data.product_id == id ? <ProductDetailsCard cartItems={cartItems} setCartItems={setCartItems} data={data}></ProductDetailsCard> : "")
             }
-        </div>  
+        </div>
     );
 };
 
