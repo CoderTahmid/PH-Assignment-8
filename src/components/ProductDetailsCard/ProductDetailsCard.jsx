@@ -10,21 +10,18 @@ const ProductDetailsCard = ({ data, cartItems, setCartItems }) => {
     const stockBtnColor = availability ? "px-[14px] py-[7px] border border-[#309C08] inline-block rounded-4xl bg-[#309C081A] text-[#309C08]" : "px-[14px] py-[7px] border border-[#9c0808] inline-block rounded-4xl bg-[#df37371a] text-[#9c0808]";
 
     const handleAddToCart = () => {
-        if (cartItems.length === 0) {
-            setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
-            toast.success("Item added!");
-        } else {
-            const hasId = cartItems.map(cartItem => cartItem.product_id == product_id);
+        const alreadyAdded = cartItems.some(cartItem => cartItem.product_id == product_id);
 
-            if (hasId[cartItems.length - 1]) {
-                toast.warning("You already added this item into cart");
-                return;
-            } else {
-                setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
-                toast.success("Item added!");
-            }
+        if (alreadyAdded) {
+            toast.warning("This is already added to cart");
+            return;
         }
+
+        setCartItems([...cartItems, { product_id, price, product_title, description }]);
+        toast.success("Item Added!");
     }
+
+    console.log(cartItems);
 
     return (
         <div>
@@ -47,7 +44,7 @@ const ProductDetailsCard = ({ data, cartItems, setCartItems }) => {
                             <p className="font-bold text-[18px]">Specification:</p>
                             <div>
                                 {
-                                    specification.map(point => <li type="1" className="text-[18px] text-[#09080F99]">{point}</li>)
+                                    specification.map((point, idx) => <li key={idx} type="1" className="text-[18px] text-[#09080F99]">{point}</li>)
                                 }
                             </div>
                             <p className="text-[18px] font-bold">Rating ⭐</p>

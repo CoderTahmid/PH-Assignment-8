@@ -19,7 +19,7 @@ const ProductDetails = () => {
     return (
         <div>
             {
-                allData.map(data => data.product_id == id ? <ProductDetailsCard cartItems={cartItems} setCartItems={setCartItems} data={data}></ProductDetailsCard> : "")
+                allData.map((data, idx) => data.product_id == id ? <ProductDetailsCard key={idx} cartItems={cartItems} setCartItems={setCartItems} data={data}></ProductDetailsCard> : "")
             }
         </div>
     );

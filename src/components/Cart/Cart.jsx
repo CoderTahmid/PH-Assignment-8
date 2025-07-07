@@ -3,6 +3,10 @@ import { useOutletContext } from "react-router-dom";
 const Cart = () => {
 
     const { cartItems } = useOutletContext();
+
+    // const { product_id, price, product_title, description, product_image } = cartItems;
+    // console.log(product_id);
+
     console.log(cartItems);
     return (
         <div className="w-[87%] mx-auto mt-12">

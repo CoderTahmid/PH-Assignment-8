@@ -1,9 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 
 const Dashboard = () => {
 
     const { navbarColorChanging, cartItems } = useOutletContext();
+    
+    // const [totalPrice, setTotalPrice] = useState(0);
+    // setTotalPrice(totalPrice + cartItems.price);
+    // console.log(totalPrice);
 
     useEffect(() => {
         navbarColorChanging(true);
