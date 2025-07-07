@@ -1,10 +1,10 @@
-import ProductDetails from "../ProductDetails/ProductDetails";
+import { IoTrashBinSharp } from "react-icons/io5";
 
 const CartCard = ({ cartItem }) => {
     const { product_title, description, price, product_image } = cartItem;
 
     return (
-        <div className="bg-gray-100 p-8 rounded-2xl">
+        <div className="bg-gray-100 p-8 rounded-2xl flex justify-between">
             <div className="gap-8 flex">
                 <div
                     className="w-[150px] rounded-xl bg-center bg-cover"
@@ -15,6 +15,9 @@ const CartCard = ({ cartItem }) => {
                     <p className="text-[#09080F99]">{description}</p>
                     <p className="font-semibold text-xl">Price: $ {price}</p>
                 </div>
+            </div>
+            <div className="flex justify-center items-center ">
+                <button className="btn btn-block my-auto p-[30px] text-3xl text-red-400"><IoTrashBinSharp></IoTrashBinSharp></button>
             </div>
         </div>
     );
