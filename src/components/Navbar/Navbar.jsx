@@ -3,10 +3,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegHeart } from "react-icons/fa";
 
 
-const Navbar = ({ navbarBgColor, cartItems }) => {
-
-    console.log(cartItems);
-
+const Navbar = ({ navbarBgColor }) => {
     return (
         <div className={navbarBgColor}>
             <NavLink to="/"><p className='font-bold'>Gadget Heaven</p></NavLink>

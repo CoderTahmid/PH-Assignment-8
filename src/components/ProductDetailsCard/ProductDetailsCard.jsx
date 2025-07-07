@@ -17,11 +17,11 @@ const ProductDetailsCard = ({ data, cartItems, setCartItems }) => {
             return;
         }
 
-        setCartItems([...cartItems, { product_id, price, product_title, description }]);
+        setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
         toast.success("Item Added!");
     }
 
-    console.log(cartItems);
+    // console.log(cartItems);
 
     return (
         <div>
