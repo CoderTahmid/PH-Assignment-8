@@ -5,7 +5,6 @@ import ProductDetailsCard from '../ProductDetailsCard/ProductDetailsCard';
 const ProductDetails = () => {
 
     const { navbarColorChanging, cartItems, setCartItems } = useOutletContext();
-    // console.log(cartItems);
     const { id } = useParams();
 
     const allData = useLoaderData();

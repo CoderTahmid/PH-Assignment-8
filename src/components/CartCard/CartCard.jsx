@@ -1,7 +1,12 @@
+// import { useState } from "react";
 import { IoTrashBinSharp } from "react-icons/io5";
 
 const CartCard = ({ cartItem }) => {
-    const { product_title, description, price, product_image } = cartItem;
+    const { product_id, product_title, description, price, product_image } = cartItem;
+
+    // const [totalPrice, setTotalPrice] = useState(0);
+    // setTotalPrice(totalPrice + price);
+    // console.log(totalPrice);
 
     return (
         <div className="bg-gray-100 p-8 rounded-2xl flex justify-between">
@@ -11,6 +16,7 @@ const CartCard = ({ cartItem }) => {
                     style={{ backgroundImage: `url(${product_image})` }}>
                 </div>
                 <div className="space-y-4">
+                    <p>{product_id}</p>
                     <p className="font-semibold text-2xl">{product_title}</p>
                     <p className="text-[#09080F99]">{description}</p>
                     <p className="font-semibold text-xl">Price: $ {price}</p>
