@@ -19,8 +19,6 @@ const ProductDetailsCard = ({ data, cartItems, setCartItems }) => {
 
         setCartItems([...cartItems, { product_id, price, product_title, description, product_image }]);
         toast.success("Item Added!");
-
-        
     }
 
     // console.log(cartItems);

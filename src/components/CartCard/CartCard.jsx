@@ -1,12 +1,8 @@
 // import { useState } from "react";
 import { IoTrashBinSharp } from "react-icons/io5";
 
-const CartCard = ({ cartItem }) => {
+const CartCard = ({ cartItem, handleDeleteButton, setCartItems }) => {
     const { product_id, product_title, description, price, product_image } = cartItem;
-
-    // const [totalPrice, setTotalPrice] = useState(0);
-    // setTotalPrice(totalPrice + price);
-    // console.log(totalPrice);
 
     return (
         <div className="bg-gray-100 p-8 rounded-2xl flex justify-between">
@@ -23,7 +19,7 @@ const CartCard = ({ cartItem }) => {
                 </div>
             </div>
             <div className="flex justify-center items-center ">
-                <button className="btn btn-block my-auto p-[30px] text-3xl text-red-400"><IoTrashBinSharp></IoTrashBinSharp></button>
+                <button onClick={() => handleDeleteButton(product_id)} className="btn btn-block my-auto p-[30px] text-3xl text-red-400"><IoTrashBinSharp></IoTrashBinSharp></button>
             </div>
         </div>
     );

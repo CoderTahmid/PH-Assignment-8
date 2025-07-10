@@ -3,8 +3,8 @@ import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 
 const Dashboard = () => {
 
-    const { navbarColorChanging, cartItems } = useOutletContext();
-    
+    const { navbarColorChanging, cartItems, setCartItems } = useOutletContext();
+
     // const [totalPrice, setTotalPrice] = useState(0);
     // setTotalPrice(totalPrice + cartItems.price);
     // console.log(totalPrice);
@@ -27,7 +27,8 @@ const Dashboard = () => {
             </div>
             <Outlet
                 context={{
-                    cartItems: cartItems
+                    cartItems: cartItems,
+                    setCartItems: setCartItems
                 }}>
             </Outlet>
         </div>
