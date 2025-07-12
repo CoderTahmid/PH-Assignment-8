@@ -4,7 +4,7 @@ import ProductDetailsCard from '../ProductDetailsCard/ProductDetailsCard';
 
 const ProductDetails = () => {
 
-    const { navbarColorChanging, cartItems, setCartItems } = useOutletContext();
+    const { navbarColorChanging, cartItems, setCartItems, wishlist, setWishlist } = useOutletContext();
     const { id } = useParams();
 
     const allData = useLoaderData();
@@ -18,7 +18,7 @@ const ProductDetails = () => {
     return (
         <div>
             {
-                allData.map((data, idx) => data.product_id == id ? <ProductDetailsCard key={idx} cartItems={cartItems} setCartItems={setCartItems} data={data}></ProductDetailsCard> : "")
+                allData.map((data, idx) => data.product_id == id ? <ProductDetailsCard key={idx} wishlist={wishlist} setWishlist={setWishlist} cartItems={cartItems} setCartItems={setCartItems} data={data}></ProductDetailsCard> : "")
             }
         </div>
     );

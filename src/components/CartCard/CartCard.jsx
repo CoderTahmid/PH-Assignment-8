@@ -12,7 +12,6 @@ const CartCard = ({ cartItem, handleDeleteButton, setCartItems }) => {
                     style={{ backgroundImage: `url(${product_image})` }}>
                 </div>
                 <div className="space-y-4">
-                    <p>{product_id}</p>
                     <p className="font-semibold text-2xl">{product_title}</p>
                     <p className="text-[#09080F99]">{description}</p>
                     <p className="font-semibold text-xl">Price: $ {price}</p>
