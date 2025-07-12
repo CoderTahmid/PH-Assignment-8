@@ -11,14 +11,19 @@ const Cart = () => {
         setCartItems(newItemArray);
     }
 
+    const handleSortByPrice = () => {
+        const sortedItems = [...cartItems].sort((a, b) => b.price - a.price );
+        setCartItems(sortedItems);
+    }
+
     return (
         <div className="w-[87%] mx-auto mt-12">
             <div className="flex items-center justify-between mb-8">
                 <p className="font-bold text-2xl">Cart</p>
                 <div className="flex items-center gap-6">
                     <p className="font-bold text-2xl">Total cost: {totalPrice}</p>
-                    <button className="btn rounded-4xl bg-white">Short by price</button>
-                    <button className="btn rounded-4xl bg-white">Purchase</button>
+                    <button onClick={handleSortByPrice} className="btn rounded-4xl bg-white text-[18px] font-semibold text-[#9538E2] border-2 border-[#9538E2]">Sort by price</button>
+                    <button className="btn rounded-4xl text-[18px] font-semibold text-white bg-[#9538E2]">Purchase</button>
                 </div>
             </div>
             <div className="space-y-6">
