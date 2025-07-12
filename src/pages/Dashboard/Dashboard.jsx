@@ -3,7 +3,7 @@ import { NavLink, Outlet, useOutletContext } from "react-router-dom";
 
 const Dashboard = () => {
 
-    const { navbarColorChanging, cartItems, setCartItems, wishlist } = useOutletContext();
+    const { navbarColorChanging, cartItems, setCartItems, wishlist, setWishlist } = useOutletContext();
 
     useEffect(() => {
         navbarColorChanging(true);
@@ -26,6 +26,7 @@ const Dashboard = () => {
                     cartItems: cartItems,
                     setCartItems: setCartItems,
                     wishlist: wishlist,
+                    setWishlist: setWishlist
                 }}>
             </Outlet>
         </div>

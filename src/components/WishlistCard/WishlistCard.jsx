@@ -1,13 +1,9 @@
 import { IoTrashBinSharp } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const WishlistCard = ({ wishlistItem }) => {
+const WishlistCard = ({ wishlistItem, handleWishlistDeleteBtn }) => {
 
-    const { product_title, description, price, product_image } = wishlistItem;
-
-    const handleDeleteButton = () => {
-        console.log("object");
-    }
+    const { product_id, product_title, description, price, product_image } = wishlistItem;
 
     return (
         <div>
@@ -25,7 +21,7 @@ const WishlistCard = ({ wishlistItem }) => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center ">
-                    <button onClick={handleDeleteButton} className="btn btn-block my-auto p-[30px] text-3xl text-red-400"><IoTrashBinSharp></IoTrashBinSharp></button>
+                    <button onClick={() => handleWishlistDeleteBtn(product_id)} className="btn btn-block my-auto p-[30px] text-3xl text-red-400"><IoTrashBinSharp></IoTrashBinSharp></button>
                 </div>
             </div>
         </div>

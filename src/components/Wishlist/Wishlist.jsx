@@ -3,14 +3,19 @@ import WishlistCard from "../WishlistCard/WishlistCard";
 
 const Wishlist = () => {
 
-    const { wishlist } = useOutletContext();
+    const { wishlist, setWishlist } = useOutletContext();
+
+    const handleWishlistDeleteBtn = (product_id) => {
+        const newWishlistArray = wishlist.filter(wishlistItem => wishlistItem.product_id  != product_id);
+        setWishlist(newWishlistArray);
+    }
 
     return (
         <div className="w-[87%] mx-auto mt-12">
             <p className="text-2xl font-bold mb-8">Wishlist</p>
             <div className="space-y-6">
                 {
-                    wishlist.map((wishlistItem, idx) => <WishlistCard key={idx} wishlistItem={wishlistItem}></WishlistCard>)
+                    wishlist.map((wishlistItem, idx) => <WishlistCard key={idx} handleWishlistDeleteBtn={handleWishlistDeleteBtn} setWishlist={setWishlist} wishlistItem={wishlistItem}></WishlistCard>)
                 }
             </div>
         </div>
