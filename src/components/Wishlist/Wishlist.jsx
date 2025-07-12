@@ -4,7 +4,7 @@ import WishlistCard from "../WishlistCard/WishlistCard";
 const Wishlist = () => {
 
     const { wishlist, setWishlist, cartItems, setCartItems } = useOutletContext();
-
+    
     const handleWishlistDeleteBtn = (product_id) => {
         const newWishlistArray = wishlist.filter(wishlistItem => wishlistItem.product_id  != product_id);
         setWishlist(newWishlistArray);

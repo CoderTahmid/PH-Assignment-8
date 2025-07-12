@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 
 const MainLayout = () => {
@@ -8,6 +8,9 @@ const MainLayout = () => {
 
     const [cartItems, setCartItems] = useState([]);
     const [wishlist, setWishlist] = useState([]);
+
+    const allData = useLoaderData();
+    console.log(allData);
 
     const navbarBgColor = navbarPurpleColor ? "mb-0 rounded-tl-4xl rounded-tr-4xl p-6 justify-between flex items-center" : "bg-[#9538E2] text-white m-[30px] mb-0 rounded-tl-4xl rounded-tr-4xl p-6 justify-between flex items-center";
 
@@ -24,7 +27,8 @@ const MainLayout = () => {
                     cartItems: cartItems,
                     setCartItems: setCartItems,
                     wishlist: wishlist,
-                    setWishlist: setWishlist
+                    setWishlist: setWishlist,
+                    allData: allData
                 }}>
             </Outlet>
             <Footer></Footer>
