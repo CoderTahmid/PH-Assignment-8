@@ -11,7 +11,7 @@ const GadgetsCard = ({ data }) => {
                 style={{ backgroundImage: `url(${product_image})` }}>
             </div>
             <h4 className="font-semibold text-2xl mb-3">{product_title}</h4>
-            <p className="text-[20px] text-[#09080F99] mb-4">Price: {price}K</p>
+            <p className="text-[20px] text-[#09080F99] mb-4">Price: {price} $</p>
             <Link to={`/products-details/${product_id}`}>
                 <button
                     className="btn btn-outline btn-secondary rounded-4xl border border-[#9538E2] text-[#9538E2] hover:bg-[#9538E2] shadow-none hover:text-white">

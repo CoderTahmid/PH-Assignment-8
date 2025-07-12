@@ -8,7 +8,7 @@ const HomeBanner = () => {
                 <h1 className="text-white font-bold text-[56px] text-center">Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
                 <p className="text-white text-center w-[70%] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 <NavLink to="/dashboard">
-                    <button className="btn btn-lg mx-auto block text-[#9538E2] rounded-4xl">Shop Now</button>
+                    <button className="btn btn-lg mx-auto block text-[#9538E2] rounded-4xl">Go to dashboard</button>
                 </NavLink>
             </div>
             <div
