@@ -2,7 +2,6 @@ import { LiaStarSolid } from "react-icons/lia";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { toast } from "react-toastify";
-// import { useState } from "react";
 
 const ProductDetailsCard = ({ data, cartItems, setCartItems, wishlist, setWishlist }) => {
 

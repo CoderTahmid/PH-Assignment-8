@@ -1,7 +1,6 @@
-// import { useState } from "react";
 import { IoTrashBinSharp } from "react-icons/io5";
 
-const CartCard = ({ cartItem, handleDeleteButton, setCartItems }) => {
+const CartCard = ({ cartItem, handleDeleteButton }) => {
     const { product_id, product_title, description, price, product_image } = cartItem;
 
     return (
