@@ -11,12 +11,14 @@ import Dashboard from "../pages/Dashboard/Dashboard";
 import Cart from "../components/Cart/Cart";
 import Wishlist from "../components/Wishlist/Wishlist";
 import FindUs from "../pages/FindUs/FindUs";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const routes = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
         loader: () => fetch("../products.json"),
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
