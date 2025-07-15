@@ -14,8 +14,8 @@ const Navbar = ({ navbarBgColor }) => {
                 <NavLink to="/find-us" className={({isActive}) => isActive ? "text-[#9538E2] font-bold" : ""}>Find us</NavLink>
             </div>
             <div className='flex gap-4 text-black'>
-                <div className='bg-white rounded-full flex justify-center items-center p-2 border border-[#0B0B0B1A]'><AiOutlineShoppingCart /></div>
-                <div className='bg-white rounded-full flex justify-center items-center p-2 border border-[#0B0B0B1A]'><FaRegHeart /></div>
+                <NavLink to="/dashboard/cart" className='bg-white rounded-full flex justify-center items-center p-2 border border-[#0B0B0B1A]'><AiOutlineShoppingCart /></NavLink>
+                <NavLink to="/dashboard/wishlist" className='bg-white rounded-full flex justify-center items-center p-2 border border-[#0B0B0B1A]'><FaRegHeart /></NavLink>
             </div>
         </div>
     );
