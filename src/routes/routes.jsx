@@ -10,6 +10,7 @@ import ProductDetails from "../components/ProductDetails/ProductDetails";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Cart from "../components/Cart/Cart";
 import Wishlist from "../components/Wishlist/Wishlist";
+import FindUs from "../pages/FindUs/FindUs";
 
 const routes = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ const routes = createBrowserRouter([
                 path: "/products-details/:id",
                 element: <ProductDetails></ProductDetails>,
                 loader: () => fetch("../products.json")
+            },
+            {
+                path: "/find-us",
+                element: <FindUs></FindUs>
             }
         ]
     }

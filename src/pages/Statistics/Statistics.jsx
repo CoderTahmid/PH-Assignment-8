@@ -17,9 +17,10 @@ const Statistics = () => {
 
     return (
         <div>
+            
             <div className="bg-[#9538E2] z-0 py-[32px] space-y-[24px]">
                 <h1 className="text-white font-bold text-[32px] text-center">Statistics</h1>
-                <p className="text-white text-center w-[70%] mx-auto">Track Your Favorites, Purchases & Spending at a Glance</p>
+                <p className="text-white text-center w-[70%] mx-auto">Track gadget pricing trends and compare product values at a glance</p>
             </div>
 
             <div className="w-[90%] mx-auto text-2xl font-bold mt-12 mb-8">Statistics</div>
