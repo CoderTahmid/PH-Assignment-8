@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import WishlistCard from "../WishlistCard/WishlistCard";
+import { toast } from "react-toastify";
 
 const Wishlist = () => {
 
@@ -8,6 +9,7 @@ const Wishlist = () => {
     const handleWishlistDeleteBtn = (product_id) => {
         const newWishlistArray = wishlist.filter(wishlistItem => wishlistItem.product_id  != product_id);
         setWishlist(newWishlistArray);
+        toast.error("Item removed from wishlist!");
     }
 
     return (

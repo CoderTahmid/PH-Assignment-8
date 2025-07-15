@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import CartCard from "../CartCard/CartCard";
+import { toast } from "react-toastify";
 
 const Cart = () => {
     const { cartItems, setCartItems } = useOutletContext();
@@ -9,6 +10,7 @@ const Cart = () => {
     const handleDeleteButton = (product_id) => {
         const newItemArray = cartItems.filter(cartItem => cartItem.product_id != product_id);
         setCartItems(newItemArray);
+        toast.error("Item removed from cart!");
     }
 
     const handleSortByPrice = () => {
