@@ -19,14 +19,6 @@ const Cart = () => {
         setCartItems(sortedItems);
     }
 
-    const handlePurshaseBtn = () => {
-        if (cartItems.length == 0) {
-            toast.warning("You have nothing to buy");
-        } else {
-            document.getElementById('my_modal_5').showModal()
-        }
-    }
-
     const handleCloseBtnFromModal = () => {
         setCartItems([]);
     }
@@ -38,7 +30,7 @@ const Cart = () => {
                 <div className="flex items-center gap-6">
                     <p className="font-bold text-2xl">Total cost: {totalPrice}</p>
                     <button onClick={handleSortByPrice} className="btn rounded-4xl bg-white text-[18px] font-semibold text-[#9538E2] border-2 border-[#9538E2]">Sort by price</button>
-                    <button onClick={() => handlePurshaseBtn()} className="btn rounded-4xl text-[18px] font-semibold text-white bg-[#9538E2]">Purchase</button>
+                    <button disabled={cartItems.length == 0 ? true : false} onClick={() => document.getElementById('my_modal_5').showModal()} className="btn rounded-4xl text-[18px] font-semibold text-white bg-[#9538E2]">Purchase</button>
                 </div>
             </div>
             <div className="space-y-6">
