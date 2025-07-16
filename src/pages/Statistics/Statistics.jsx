@@ -5,7 +5,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'rec
 const Statistics = () => {
 
     const { navbarColorChanging, allData } = useOutletContext();
-    console.log(allData);
 
     const data = allData;
 
