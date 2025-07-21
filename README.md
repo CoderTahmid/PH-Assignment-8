@@ -9,15 +9,7 @@ Check out the live website here:
 
 ---
 
-## 📎 Attaching a PDF File
-
-To attach a PDF file in your README, simply place the PDF in your project directory (for example, in a folder called `docs`) and link to it like this:
-
-```markdown
 [Download Project Documentation (PDF)](./docs/Batch-10_Assignment-08.pdf)
-```
-
-Replace `your-file.pdf` with your actual PDF filename and path.
 
 ---
 
