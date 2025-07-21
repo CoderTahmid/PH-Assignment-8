@@ -1,12 +1,44 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Gadget Heaven** – your one-stop shop for exploring the latest gadgets, comparing features, and managing your wishlist and cart with ease!
 
-Currently, two official plugins are available:
+## 🚀 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live website here:  
+[https://unrivaled-dolphin-b88fa0.netlify.app/](https://unrivaled-dolphin-b88fa0.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📎 Attaching a PDF File
+
+To attach a PDF file in your README, simply place the PDF in your project directory (for example, in a folder called `docs`) and link to it like this:
+
+```markdown
+[Download Project Documentation (PDF)](Batch-10_Assignment-08.pdf)
+```
+
+Replace `your-file.pdf` with your actual PDF filename and path.
+
+---
+
+## ⚛️ React Fundamental Concepts Used
+
+- **Components**: Reusable UI building blocks for each section and feature.
+- **Props & State**: Passing data and managing dynamic content across components.
+- **Hooks**: Using `useState`, `useEffect`, and `useParams` for state, lifecycle, and routing.
+- **React Router**: Implementing client-side routing for seamless navigation.
+- **Context API via Outlet**: Sharing global state (cart, wishlist, navbar color) across nested routes.
+
+---
+
+## 🌟 Top 5 Features
+
+1. **Product Browsing**: Explore gadgets by category (Laptops, Phones, Drones, etc.).
+2. **Product Details**: View detailed information, specifications, and ratings for each product.
+3. **Cart & Wishlist Management**: Add, remove, and sort items in your cart and wishlist.
+4. **Statistics Page**: Visualize gadget statistics and insights.
+5. **Error Handling**: Custom error page for invalid routes and robust user feedback with toasts.
+
+---
+
+Enjoy
