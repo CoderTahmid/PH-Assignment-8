@@ -7,7 +7,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         navbarColorChanging(true);
-
+        document.title = "Dashboard | Gadget Heaven"
         return () => navbarColorChanging(false);
     }, [navbarColorChanging]);
 

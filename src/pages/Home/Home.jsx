@@ -8,8 +8,8 @@ const Home = () => {
     const { navbarColorChanging } = useOutletContext();
 
     useEffect( () => {
-        navbarColorChanging(false);
-
+        navbarColorChanging(false); 
+        document.title = "Home | Gadget Heaven"
         return () => navbarColorChanging(true);
     }, [navbarColorChanging]);
 

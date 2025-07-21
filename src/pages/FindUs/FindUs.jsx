@@ -10,7 +10,7 @@ const FindUs = () => {
 
     useEffect(() => {
         navbarColorChanging(true);
-
+        document.title = "Find us | Gadget Heaven"
         return () => navbarColorChanging(true);
     }, [navbarColorChanging]);
 

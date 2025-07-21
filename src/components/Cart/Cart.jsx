@@ -1,10 +1,11 @@
-import { useOutletContext } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import CartCard from "../CartCard/CartCard";
 import { toast } from "react-toastify";
 import modalImg from "../../assets/Group.png"
 
 const Cart = () => {
     const { cartItems, setCartItems } = useOutletContext();
+    const navigate = useNavigate();
 
     const totalPrice = cartItems.reduce((sum, cartItem) => sum + cartItem.price, 0);
 
@@ -21,6 +22,7 @@ const Cart = () => {
 
     const handleCloseBtnFromModal = () => {
         setCartItems([]);
+        navigate("/")
     }
 
     return (

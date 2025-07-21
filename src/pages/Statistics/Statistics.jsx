@@ -10,6 +10,7 @@ const Statistics = () => {
 
     useEffect(() => {
         navbarColorChanging(true);
+        document.title = "Statistics | Gadget Heaven"
 
         return () => navbarColorChanging(true);
     }, [navbarColorChanging]);
