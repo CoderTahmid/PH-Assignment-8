@@ -27,12 +27,14 @@ const Cart = () => {
 
     return (
         <div className="w-[87%] mx-auto mt-12">
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex flex-col sm:flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4 md:gap-0">
                 <p className="font-bold text-2xl">Cart</p>
-                <div className="flex items-center gap-6">
+                <div className="flex flex-col sm:flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 w-full md:w-auto">
                     <p className="font-bold text-2xl">Total cost: {totalPrice}</p>
-                    <button onClick={handleSortByPrice} className="btn rounded-4xl bg-white text-[18px] font-semibold text-[#9538E2] border-2 border-[#9538E2]">Sort by price</button>
-                    <button disabled={cartItems.length == 0 ? true : false} onClick={() => document.getElementById('my_modal_5').showModal()} className="btn rounded-4xl text-[18px] font-semibold text-white bg-[#9538E2]">Purchase</button>
+                    <div className="flex gap-2 md:gap-6">
+                        <button onClick={handleSortByPrice} className="btn rounded-4xl bg-white text-[18px] font-semibold text-[#9538E2] border-2 border-[#9538E2]">Sort by price</button>
+                        <button disabled={cartItems.length == 0 ? true : false} onClick={() => document.getElementById('my_modal_5').showModal()} className="btn rounded-4xl text-[18px] font-semibold text-white bg-[#9538E2]">Purchase</button>
+                    </div>
                 </div>
             </div>
             <div className="space-y-6">

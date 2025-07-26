@@ -14,7 +14,7 @@ const Wishlist = () => {
 
     return (
         <div className="w-[87%] mx-auto mt-12">
-            <p className="text-2xl font-bold mb-8">Wishlist</p>
+            <p className="text-lg md:text-xl lg:text-2xl font-bold mb-4 md:mb-8">Wishlist</p>
             <div className="space-y-6">
                 {
                     wishlist.map((wishlistItem, idx) => <WishlistCard key={idx} cartItems={cartItems} setCartItems={setCartItems} handleWishlistDeleteBtn={handleWishlistDeleteBtn} setWishlist={setWishlist} wishlistItem={wishlistItem}></WishlistCard>)

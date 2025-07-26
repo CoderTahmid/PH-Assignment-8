@@ -3,9 +3,9 @@ import { NavLink, Outlet } from "react-router-dom";
 const AllGadgets = () => {
     return (
         <div className="mt-[100px] w-[90%] mx-auto">
-            <h1 className="text-center font-bold text-[40px] mb-12">Explore Cutting-Edge Gadgets</h1>
-            <div className="flex gap-6">
-                <div className="w-[30%] border h-full border-gray-200 rounded-2xl p-6 flex flex-col justify-center items-center gap-6">
+            <h1 className="text-center font-bold text-xl md:text-3xl lg:text-[40px] mb-12">Explore Cutting-Edge Gadgets</h1>
+            <div className="flex flex-col lg:flex-row gap-6">
+                <div className="w-full lg:w-[30%] border h-full border-gray-200 rounded-2xl p-6 flex flex-col justify-center items-center gap-6 mb-6 lg:mb-0">
                     <NavLink to="/" className={({ isActive }) => isActive ? "w-[90%] btn btn-lg rounded-4xl bg-[#9538E2] text-white" : "w-[90%] btn btn-lg rounded-4xl text-[#09080F99]"}>
                         <button className="">All Product</button>
                     </NavLink>
