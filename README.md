@@ -5,7 +5,7 @@ Welcome to **Gadget Heaven** – your one-stop shop for exploring the latest gad
 ## 🚀 Live Site
 
 Check out the live website here:  
-[https://unrivaled-dolphin-b88fa0.netlify.app/](https://unrivaled-dolphin-b88fa0.netlify.app/)
+[https://stellular-piroshki-075121.netlify.app/](https://stellular-piroshki-075121.netlify.app/)
 
 ---
 
